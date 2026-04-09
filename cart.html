@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FoodExpress Cart</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<div class="logo">FoodExpress 🍔</div>
+
+<nav class="nav-links">
+<a href="index.html">Home</a>
+<a href="menu.html">Menu</a>
+<a href="cart.html">Cart</a>
+<a href="login.html">Login</a>
+</nav>
+
+</header>
+
+<h2 class="cart-title">Your Cart 🛒</h2>
+
+<div id="cartItems" class="cart-container"></div>
+
+<div class="cart-total">
+
+<h3>Total: <span id="totalPrice">₹0</span></h3>
+
+<button class="order-btn" onclick="placeOrder()">Place Order</button>
+
+</div>
+
+<!-- Payment Section -->
+
+<div id="paymentSection" class="payment-box" style="display:none;">
+
+<h3>Select Payment Method</h3>
+
+<button onclick="paymentSuccess('Cash on Delivery')">Cash on Delivery</button>
+
+<button onclick="paymentSuccess('UPI Payment')">UPI Payment</button>
+
+<button onclick="paymentSuccess('Card Payment')">Card Payment</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
