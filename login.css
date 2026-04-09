@@ -1,0 +1,114 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#ff7e5f,#ff9966);
+}
+
+/* Container */
+
+.container{
+width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+/* Login Box */
+
+.login-box{
+background:white;
+padding:40px;
+width:340px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.25);
+text-align:center;
+animation:fadeIn 0.8s ease;
+}
+
+/* Logo */
+
+.logo{
+color:#ff5722;
+margin-bottom:10px;
+}
+
+/* Heading */
+
+.login-box h2{
+margin-bottom:20px;
+color:#333;
+}
+
+/* Inputs */
+
+.login-box input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ddd;
+border-radius:6px;
+font-size:14px;
+transition:0.3s;
+}
+
+.login-box input:focus{
+border-color:#ff5722;
+outline:none;
+}
+
+/* Button */
+
+button{
+width:100%;
+padding:12px;
+margin-top:10px;
+background:#ff5722;
+border:none;
+color:white;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#e64a19;
+}
+
+/* Links */
+
+.links{
+margin-top:15px;
+font-size:14px;
+}
+
+.links a{
+color:#ff5722;
+text-decoration:none;
+}
+
+.links a:hover{
+text-decoration:underline;
+}
+
+/* Animation */
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
